@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { width: 300px; margin: 0; padding: 16px; }
+      button { width: 100%; }
+      .disclaimer { font-size: 0.75em; color: #555; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <button id="toggleSidebar">Toggle Fact-check Sidebar</button>
+    <button id="startCapture">Start Capturing CC</button>
+    <div id="apiKeyInput">
+        <label for="apiKey">OpenAI API Key:</label><br>
+        <input type="text" id="apiKey"><br>
+        <button id="saveKey">Save API Key</button>
+    </div>
+    <p class="disclaimer">
+        Disclaimer: The fact-checks provided by this extension should not be taken at face value. They are meant to provide additional context and encourage further research, not to provide definitive judgments. Always conduct your own research to verify information. We do not endorse any claims made in the videos you watch.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
